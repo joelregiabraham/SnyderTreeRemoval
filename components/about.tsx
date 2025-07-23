@@ -33,7 +33,7 @@ export default function About() {
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
           <div className="relative">
             <Image
-              src="/placeholder.svg?height=600&width=800"
+              src="/image1.jpg"
               alt="Snyder family team"
               width={800}
               height={600}

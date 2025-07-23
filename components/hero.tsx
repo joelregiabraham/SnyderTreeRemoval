@@ -7,7 +7,7 @@ export default function Hero() {
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <Image
-          src="/placeholder.svg?height=1080&width=1920"
+          src="/image4.jpg"
           alt="Professional tree removal service"
           fill
           className="object-cover"
