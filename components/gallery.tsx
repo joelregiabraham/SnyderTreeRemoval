@@ -41,8 +41,8 @@ const galleryItems = [
   {
     id: 5,
     category: "Tree Removal",
-    type: "video",
-    src: "/placeholder.svg?height=400&width=600",
+    type: "image",
+    src: "/image7.jpg",
     alt: "Tree removal process video",
   },
   {

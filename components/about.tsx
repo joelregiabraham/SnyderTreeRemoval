@@ -46,8 +46,8 @@ export default function About() {
               Three Generations of Tree Care Excellence
             </h3>
             <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-              Founded in 1995 by John Snyder, our family business has grown from a single truck operation to a
-              full-service tree care company. Today, we're proud to have three generations working together to provide
+              Founded in "Year the company started" by Luke & David Snyder, our family business has grown from a single truck operation to a
+              full-service tree care company. Today, we're proud  working together to provide
               safe, professional, and reliable tree services to our community.
             </p>
             <p className="text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">

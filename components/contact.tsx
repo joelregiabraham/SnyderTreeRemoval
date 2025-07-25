@@ -24,7 +24,7 @@ const contactInfo = [
   {
     icon: Clock,
     title: "Hours",
-    details: "Mon-Fri: 7AM-6PM\nSat: 8AM-4PM\nEmergency: 24/7",
+    details: "Mon-Fri: 8AM-4PM",
     action: null,
   },
 ]
@@ -93,7 +93,7 @@ export default function Contact() {
               <CardContent>
                 <div className="aspect-video rounded-lg overflow-hidden">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3048.4!2d-89.6501!3d39.7817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMznCsDQ2JzU0LjEiTiA4OcKwMzknMDAuNCJX!5e0!3m2!1sen!2sus!4v1234567890"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2898.078801796475!2d-80.75421352415245!3d43.41718026766447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882bf8acd089ec4f%3A0x9666b99519af3081!2sSnyder%20Tree%20Removal%20Ltd!5e0!3m2!1sen!2sca!4v1753403575853!5m2!1sen!2sca"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
