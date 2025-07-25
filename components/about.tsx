@@ -43,12 +43,14 @@ export default function About() {
 
           <div>
             <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
-              Three Generations of Tree Care Excellence
+              About Us
             </h3>
             <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-              Founded in "Year the company started" by Luke & David Snyder, our family business has grown from a single truck operation to a
-              full-service tree care company. Today, we're proud  working together to provide
-              safe, professional, and reliable tree services to our community.
+              Snyder Tree Removal is a family business owned and operated by brothers David and Luke Snyder. Growing up on a dairy farm, we developed a strong work ethic that we now bring to every tree care project.
+              <br /><br />
+              Trained and certified by Arboriculture Canada, we have the expertise and equipment to handle jobs of any size—from complete tree removal to trimming, storm cleanup, chipping, and stump grinding.
+              <br /><br />
+              Our business is built on traditional values of hard work, reliability, and respect. At Snyder Tree Removal, we are committed to meeting your needs and providing peace of mind throughout the process.
             </p>
             <p className="text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
               Our commitment to safety, quality workmanship, and customer satisfaction has made us the trusted choice
