@@ -3,8 +3,9 @@
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { Menu, Moon, Sun, TreePine } from "lucide-react"
+import { Menu, Moon, Sun } from "lucide-react"
 import { useTheme } from "next-themes"
+import Image from "next/image"
 
 const navigation = [
   { name: "Home", href: "#home" },
@@ -23,7 +24,7 @@ export default function Header() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center space-x-2">
-            <TreePine className="h-8 w-8 text-forest-600" />
+            <Image src="/logo.png" alt="Snyder Tree Removal Logo" width={40} height={40} className="h-10 w-auto" />
             <span className="text-xl font-bold text-forest-800 dark:text-forest-200">Snyder Tree Removal</span>
           </div>
 

@@ -1,4 +1,5 @@
-import { TreePine, Facebook, Instagram, Linkedin } from "lucide-react"
+import { Facebook, Instagram, Linkedin } from "lucide-react"
+import Image from "next/image"
 
 const navigation = [
   { name: "Home", href: "#home" },
@@ -21,7 +22,13 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           <div className="md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <TreePine className="h-8 w-8 text-forest-400" />
+              <Image
+                src="/logo.png"
+                alt="Snyder Tree Removal Logo"
+                width={32}
+                height={32}
+                className="h-8 w-auto brightness-0 invert"
+              />
               <span className="text-xl font-bold">Snyder Tree Removal</span>
             </div>
             <p className="text-gray-300 mb-6 max-w-md">
@@ -64,11 +71,7 @@ export default function Footer() {
               <p>info@snydertreeremoval.com</p>
               <p>Springfield & Surrounding Areas</p>
               <p className="text-sm">
-                Mon-Fri: 7AM-6PM
-                <br />
-                Sat: 8AM-4PM
-                <br />
-                Emergency: 24/7
+                Mon-Fri: 8AM-4PM
               </p>
             </div>
           </div>
