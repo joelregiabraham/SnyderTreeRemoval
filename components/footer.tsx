@@ -32,10 +32,10 @@ export default function Footer() {
               <span className="text-xl font-bold">Snyder Tree Removal</span>
             </div>
             <p className="text-gray-300 mb-6 max-w-md">
-              Family-owned tree care specialists serving the community since 1995. Professional, safe, and reliable tree
+              Family-owned tree care specialists serving the community since 2010. Professional, safe, and reliable tree
               services you can trust.
             </p>
-            <div className="flex space-x-4">
+            {/* <div className="flex space-x-4">
               {socialLinks.map((social) => (
                 <a
                   key={social.name}
@@ -46,7 +46,7 @@ export default function Footer() {
                   <social.icon className="h-6 w-6" />
                 </a>
               ))}
-            </div>
+            </div> */}
           </div>
 
           <div>
@@ -67,9 +67,9 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact Info</h3>
             <div className="space-y-2 text-gray-300">
-              <p>(555) 123-4567</p>
-              <p>info@snydertreeremoval.com</p>
-              <p>Springfield & Surrounding Areas</p>
+              <p>519-580-1800</p>
+              <p>david@snydertree.ca</p>
+              <p>Snyder Tree Removal Ltd</p>
               <p className="text-sm">
                 Mon-Fri: 8AM-4PM
               </p>

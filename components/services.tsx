@@ -1,10 +1,10 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { TreePine, Scissors, Zap, Phone } from "lucide-react"
+import { Axe, TreePine, Scissors, Zap, Phone, TreeDeciduous } from "lucide-react"
 
 const services = [
   {
-    icon: TreePine,
+    icon: Axe,
     title: "Tree Removal",
     description: "Safe and efficient removal of trees of all sizes, including hazardous and hard-to-reach trees.",
     features: ["Hazardous tree removal", "Large tree specialists", "Stump grinding included", "Complete cleanup"],
@@ -16,7 +16,7 @@ const services = [
     features: ["Crown thinning", "Deadwood removal", "Structural pruning", "Aesthetic shaping"],
   },
   {
-    icon: Zap,
+    icon: TreeDeciduous,
     title: "Stump Removal",
     description: "Complete stump grinding and removal services to reclaim your landscape space.",
     features: ["Stump grinding", "Root removal", "Site cleanup", "Soil leveling"],
@@ -24,8 +24,8 @@ const services = [
   {
     icon: Phone,
     title: "Emergency Services",
-    description: "24/7 emergency tree services for storm damage, fallen trees, and urgent situations.",
-    features: ["24/7 availability", "Storm damage cleanup", "Insurance assistance", "Rapid response"],
+    description: "Emergency tree services for storm damage, fallen trees, and urgent situations.",
+    features: ["Storm damage cleanup", "Insurance assistance", "Rapid response"],
   },
 ]
 

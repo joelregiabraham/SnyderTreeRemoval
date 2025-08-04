@@ -6,19 +6,19 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Phone",
-    details: "(555) 123-4567",
-    action: "tel:+15551234567",
+    details: "519-580-1800",
+    action: "tel:+1519-580-1800",
   },
   {
     icon: Mail,
     title: "Email",
-    details: "info@snydertreeremoval.com",
-    action: "mailto:info@snydertreeremoval.com",
+    details: "david@snydertree.ca",
+    action: "mailto:david@snydertree.ca",
   },
   {
     icon: MapPin,
-    title: "Service Area",
-    details: "Springfield & Surrounding Areas",
+    title: "Snyder Tree Removal Ltd",
+    details: "1476 Line 41, New Hamburg, ON N3A 4A3",
     action: null,
   },
   {
@@ -78,7 +78,7 @@ export default function Contact() {
                     <a href="tel:+15551234567">Call Now</a>
                   </Button>
                   <Button size="lg" variant="outline" asChild>
-                    <a href="mailto:info@snydertreeremoval.com">Send Email</a>
+                    <a href="mailto:david@snydertree.ca">Send Email</a>
                   </Button>
                 </div>
               </CardContent>
@@ -105,7 +105,7 @@ export default function Contact() {
                 </div>
                 <div className="mt-4 text-center">
                   <p className="text-gray-600 dark:text-gray-300">
-                    <strong>Service Area:</strong> Springfield and surrounding communities within 50 miles
+                    <strong>Service Area:</strong> Snyder Tree Removal Ltd
                   </p>
                 </div>
               </CardContent>
