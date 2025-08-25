@@ -45,20 +45,20 @@ const galleryItems = [
     src: "/image7.jpg",
     alt: "Tree removal process",
   },
-  {
-    id: 6,
-    category: "Pruning",
-    type: "image",
-    src: "/placeholder.svg?height=400&width=600",
-    alt: "Crown thinning service",
-  },
-  {
-    id: 7,
-    category: "Stump Removal",
-    type: "image",
-    src: "/placeholder.svg?height=400&width=600",
-    alt: "Complete stump removal",
-  },
+  // {
+  //   id: 6,
+  //   category: "Pruning",
+  //   type: "image",
+  //   src: "/placeholder.svg?height=400&width=600",
+  //   alt: "Crown thinning service",
+  // },
+  // {
+  //   id: 7,
+  //   category: "Stump Removal",
+  //   type: "image",
+  //   src: "/placeholder.svg?height=400&width=600",
+  //   alt: "Complete stump removal",
+  // },
   {
     id: 8,
     category: "Equipment",
@@ -66,13 +66,13 @@ const galleryItems = [
     src: "/image6.jpg",
     alt: "Crane tree removal",
   },
-  {
-    id: 9,
-    category: "Tree Removal",
-    type: "image",
-    src: "/placeholder.svg?height=400&width=600",
-    alt: "Emergency tree removal",
-  },
+  // {
+  //   id: 9,
+  //   category: "Tree Removal",
+  //   type: "image",
+  //   src: "/placeholder.svg?height=400&width=600",
+  //   alt: "Emergency tree removal",
+  // },
 ]
 
 export default function Gallery() {

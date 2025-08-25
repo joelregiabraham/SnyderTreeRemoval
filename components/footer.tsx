@@ -67,7 +67,7 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact Info</h3>
             <div className="space-y-2 text-gray-300">
-              <p>519-580-1800</p>
+              <p>519-570-5900</p>
               <p>david@snydertree.ca</p>
               <p>Snyder Tree Removal Ltd</p>
               <p className="text-sm">

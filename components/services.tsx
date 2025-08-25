@@ -1,10 +1,10 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Axe, TreePine, Scissors, Zap, Phone, TreeDeciduous } from "lucide-react"
+import { TreePine, Scissors, Zap } from "lucide-react"
 
 const services = [
   {
-    icon: Axe,
+    icon: TreePine,
     title: "Tree Removal",
     description: "Safe and efficient removal of trees of all sizes, including hazardous and hard-to-reach trees.",
     features: ["Hazardous tree removal", "Large tree specialists", "Stump grinding included", "Complete cleanup"],
@@ -16,16 +16,10 @@ const services = [
     features: ["Crown thinning", "Deadwood removal", "Structural pruning", "Aesthetic shaping"],
   },
   {
-    icon: TreeDeciduous,
+    icon: Zap,
     title: "Stump Removal",
     description: "Complete stump grinding and removal services to reclaim your landscape space.",
     features: ["Stump grinding", "Root removal", "Site cleanup", "Soil leveling"],
-  },
-  {
-    icon: Phone,
-    title: "Emergency Services",
-    description: "Emergency tree services for storm damage, fallen trees, and urgent situations.",
-    features: ["Storm damage cleanup", "Insurance assistance", "Rapid response"],
   },
 ]
 
@@ -40,7 +34,7 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 max-w-5xl mx-auto">
           {services.map((service, index) => (
             <Card key={index} className="h-full hover:shadow-lg transition-shadow duration-300">
               <CardHeader className="text-center">

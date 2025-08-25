@@ -6,8 +6,8 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Phone",
-    details: "519-580-1800",
-    action: "tel:+1519-580-1800",
+    details: "519-570-5900",
+    action: "tel:+1519-570-5900",
   },
   {
     icon: Mail,
