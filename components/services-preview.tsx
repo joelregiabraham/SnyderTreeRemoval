@@ -2,7 +2,7 @@
 
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { TreePine, Scissors, Zap, ArrowRight } from "lucide-react"
+import { TreePine, Scissors, TreeDeciduous, Trees, ArrowRight } from "lucide-react"
 import { useState } from "react"
 
 const services = [
@@ -15,7 +15,7 @@ const services = [
     bgColor: "bg-red-50 dark:bg-red-900/20",
   },
   {
-    icon: Scissors,
+    icon: Trees,
     title: "Tree Pruning",
     description: "Professional pruning and trimming",
     features: ["Crown thinning", "Deadwood removal", "Health improvement"],
@@ -23,7 +23,7 @@ const services = [
     bgColor: "bg-forest-50 dark:bg-forest-900/20",
   },
   {
-    icon: Zap,
+    icon: TreeDeciduous,
     title: "Stump Removal",
     description: "Complete stump grinding services",
     features: ["Stump grinding", "Root removal", "Site restoration"],
@@ -97,7 +97,7 @@ export default function ServicesPreview() {
         <div className="text-center">
           <Button size="lg" className="bg-forest-600 hover:bg-forest-700 px-8 py-4" asChild>
             <a href="#services">
-              View All Services
+              Get Your Free Estimate
               <ArrowRight className="ml-2 h-5 w-5" />
             </a>
           </Button>
