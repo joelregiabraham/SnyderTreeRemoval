@@ -9,7 +9,16 @@ import Image from "next/image"
 
 const categories = ["All", "Tree Removal", "Pruning", "Stump Removal", "Equipment"]
 
-const galleryItems = [
+interface GalleryItem {
+  id: number
+  category: string
+  type: string
+  src: string
+  alt: string
+  thumbnail?: string
+}
+
+const galleryItems: GalleryItem[] = [
   {
     id: 1,
     category: "Tree Removal",
@@ -73,6 +82,14 @@ const galleryItems = [
   //   src: "/placeholder.svg?height=400&width=600",
   //   alt: "Emergency tree removal",
   // },
+  {
+    id: 10,
+    category: "Tree Removal",
+    type: "video",
+    src: "/TreeRemovalVideo.mp4", // video file path
+    thumbnail: "/videoThumbnail.png", // Replace with your actual thumbnail image path
+    alt: "Tree removal video",
+  },
 ]
 
 export default function Gallery() {
@@ -168,7 +185,7 @@ export default function Gallery() {
             >
               <div className="relative aspect-[4/3] overflow-hidden">
                 <Image
-                  src={item.src || "/placeholder.svg"}
+                  src={item.type === "video" ? item.thumbnail || "/placeholder.svg" : item.src || "/placeholder.svg"}
                   alt={item.alt}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -226,18 +243,29 @@ export default function Gallery() {
                   </Button>
                 )}
 
-                {/* Main Image */}
+                {/* Main Content (Image or Video) */}
                 <div className="relative w-full h-full flex items-center justify-center p-8">
-                  <Image
-                    src={selectedItem.src || "/placeholder.svg"}
-                    alt={selectedItem.alt}
-                    fill
-                    className="object-contain"
-                    priority
-                  />
+                  {selectedItem.type === "video" ? (
+                    <video
+                      src={selectedItem.src}
+                      controls
+                      autoPlay
+                      className="max-w-full max-h-full object-contain"
+                    >
+                      Your browser does not support the video tag.
+                    </video>
+                  ) : (
+                    <Image
+                      src={selectedItem.src || "/placeholder.svg"}
+                      alt={selectedItem.alt}
+                      fill
+                      className="object-contain"
+                      priority
+                    />
+                  )}
                 </div>
 
-                {/* Image Info */}
+                {/* Image/Video Info */}
                 <div className="absolute bottom-4 left-4 text-white bg-black/50 rounded-lg p-4">
                   <p className="text-lg font-medium">{selectedItem.alt}</p>
                   <p className="text-sm opacity-80">{selectedItem.category}</p>
