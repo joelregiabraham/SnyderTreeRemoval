@@ -13,9 +13,10 @@ interface GalleryItem {
   id: number
   category: string
   type: string
-  src: string
+  src?: string
   alt: string
   thumbnail?: string
+  youtubeId?: string
 }
 
 const galleryItems: GalleryItem[] = [
@@ -86,8 +87,8 @@ const galleryItems: GalleryItem[] = [
     id: 10,
     category: "Tree Removal",
     type: "video",
-    src: "/TreeRemovalVideo.mp4", // video file path
-    thumbnail: "/videoThumbnail.png", // Replace with your actual thumbnail image path
+    youtubeId: "YkeipqRfm5E", // actual YouTube video ID
+    thumbnail: "/videoThumbnail.png", //  actual thumbnail image path
     alt: "Tree removal video",
   },
 ]
@@ -245,15 +246,17 @@ export default function Gallery() {
 
                 {/* Main Content (Image or Video) */}
                 <div className="relative w-full h-full flex items-center justify-center p-8">
-                  {selectedItem.type === "video" ? (
-                    <video
-                      src={selectedItem.src}
-                      controls
-                      autoPlay
-                      className="max-w-full max-h-full object-contain"
-                    >
-                      Your browser does not support the video tag.
-                    </video>
+                  {selectedItem.type === "video" && selectedItem.youtubeId ? (
+                    <iframe
+                      width="100%"
+                      height="100%"
+                      src={`https://www.youtube.com/embed/${selectedItem.youtubeId}?autoplay=1`}
+                      title="YouTube video player"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      className="max-w-full max-h-full aspect-video"
+                    ></iframe>
                   ) : (
                     <Image
                       src={selectedItem.src || "/placeholder.svg"}
