@@ -23,7 +23,7 @@ These are statements and values found in the current code, not owner-verified bu
 ## Owner confirmation required before publishing or changing claims
 
 - Company start date: current source conflicts between 1995 and 2010 and also says “15+ Years.”
-- Professional claims: ISA certification, Tree Care Industry Association affiliation, licensing/insurance, OSHA safety certification, and Arboriculture Canada training.
+- Professional claims: ISA certification, Tree Care Industry Association affiliation, OSHA safety certification, and Arboriculture Canada training remain unverified. The owner directed that separate “Licensed” and “Insured” badges appear in the Certifications & Qualifications section; this approval applies to those labels and placement.
 - Quantified claims: “1000+ Happy Customers” and “100% Satisfaction Rate.”
 - Correct public phone number for every call action, and the accuracy of the displayed email, street address, and hours.
 - Actual service area and any service exclusions.

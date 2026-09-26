@@ -4,10 +4,8 @@ import { Award, Users, Clock, Shield } from "lucide-react"
 import Image from "next/image"
 
 const certifications = [
-  "ISA Certified Arborist",
-  "Tree Care Industry Association",
-  "Licensed & Insured",
-  "OSHA Safety Certified",
+  "Licensed",
+  "Insured",
 ]
 
 const stats = [

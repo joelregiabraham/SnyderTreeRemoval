@@ -2,14 +2,14 @@
 
 ## Current state
 
-- **Objective:** establish durable agent instructions and project context on the documentation branch.
-- **State:** documentation setup complete; no application code or deployment settings changed.
+- **Objective:** remove three unapproved credential badges from the Certifications & Qualifications section.
+- **State:** requested copy update is implemented locally; no deployment settings changed.
 - **Branch:** `development` (this setup did not push it; remote branch state has not been independently checked).
-- **Code baseline:** `1a7dd67` (`Added Youtube ID`).
+- **Code baseline:** `1a7dd67` (`Added Youtube ID`); documentation setup and requested copy edits follow locally.
 - **Guidance entry point:** `AGENTS.md`, then `docs/agentic/INDEX.md`.
 - **Setup design:** `docs/superpowers/specs/2026-09-26-agentic-environment-design.md`.
 - **Setup plan:** `docs/superpowers/plans/2026-09-26-agentic-environment-setup.md`.
-- **Next action:** the owner can confirm the open business facts below or provide the first website change request; use a focused spec when the task needs one.
+- **Next action:** review the diff; decide whether to publish a development preview. Check the current Vercel branch settings before relying on automatic deployment.
 
 ## Decisions still open
 
