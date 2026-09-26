@@ -8,7 +8,8 @@ Start here after reading the repository-level [agent instructions](../../AGENTS.
 | --- | --- |
 | Any code or site-structure change | [Architecture](ARCHITECTURE.md), [workflow](WORKFLOW.md), and the files named by the active route |
 | Website copy, contact details, or business claims | [Project context](PROJECT_CONTEXT.md) and [workflow](WORKFLOW.md); confirm unresolved facts with the owner |
-| Multi-step work or cross-file changes | [Workflow](WORKFLOW.md), [current status](STATUS.md), and [decisions](DECISIONS.md) |
+| New feature, meaningful defect, or unclear behavior | [Task specification guidance](../specs/README.md) and [specification template](../specs/template.md) |
+| Multi-step work or cross-file changes | [Plan guidance](../plans/README.md), [workflow](WORKFLOW.md), [current status](STATUS.md), and [decisions](DECISIONS.md) |
 | Picking up work in a new chat | [Current status](STATUS.md), then the linked active plan or specification |
 | Questions about why the project uses a particular policy | [Decisions](DECISIONS.md) |
 
