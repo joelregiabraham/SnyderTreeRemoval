@@ -4,7 +4,7 @@
 
 - **Objective:** establish durable agent instructions and project context on the documentation branch.
 - **State:** documentation setup complete; no application code or deployment settings changed.
-- **Branch:** `development` (local; not pushed).
+- **Branch:** `development` (this setup did not push it; remote branch state has not been independently checked).
 - **Code baseline:** `1a7dd67` (`Added Youtube ID`).
 - **Guidance entry point:** `AGENTS.md`, then `docs/agentic/INDEX.md`.
 - **Setup design:** `docs/superpowers/specs/2026-09-26-agentic-environment-design.md`.

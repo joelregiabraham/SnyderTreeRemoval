@@ -93,7 +93,7 @@ These observations are based on a read-only inspection at commit `1a7dd67` (`Add
 - Site copy has inconsistent business-start dates: metadata says 1995; the hero/footer say 2010; the About section says “15+ Years.”
 - The About section also asserts certifications, insurance, customer counts, and satisfaction claims that have not been verified with the owner.
 - Footer policy links point to `#`; social links are placeholders and currently commented out.
-- The confirmed GitHub repository is `joelregiabraham/SnyderTreeRemoval`, connected to the Vercel project per the user's screenshot. The local `development` branch currently starts at `1a7dd67` and has not been pushed.
+- The confirmed GitHub repository is `joelregiabraham/SnyderTreeRemoval`, connected to the Vercel project per the user's screenshot. The local `development` branch starts at `1a7dd67`; this setup did not push it, and remote branch state was not independently checked.
 
 ## 7. Out of scope for this setup
 
@@ -110,7 +110,7 @@ These observations are based on a read-only inspection at commit `1a7dd67` (`Add
 - Product-context documentation separates source-observed copy from owner-confirmed facts and visibly lists unresolved claims.
 - Workflow documentation states the branch, identity, preview, and production-release rules in plain language.
 - Specs and plans have simple reusable templates that require goal, scope, acceptance/evaluation criteria, relevant context, and current status.
-- The status file clearly marks the docs setup as in progress and identifies the next step without pretending any files have already been implemented.
+- At the first implementation checkpoint, the status file marks the docs setup as in progress; on completion it marks the docs setup complete and identifies the next step without implying application changes were made.
 - No application code, dependencies, build settings, Vercel settings, or GitHub settings are changed by the documentation implementation.
 - A future chat can determine the project state and next step from the repository documents without needing this conversation.
 
