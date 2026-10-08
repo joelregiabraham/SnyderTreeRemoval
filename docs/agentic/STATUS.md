@@ -2,14 +2,14 @@
 
 ## Current state
 
-- **Objective:** remove three unapproved credential badges from the Certifications & Qualifications section.
-- **State:** requested copy update is implemented locally; no deployment settings changed.
-- **Branch:** `development` (this setup did not push it; remote branch state has not been independently checked).
-- **Code baseline:** `1a7dd67` (`Added Youtube ID`); documentation setup and requested copy edits follow locally.
+- **Objective:** safely deploy the approved qualifications update after clearing Vercel's Next.js security block.
+- **State:** Next.js updated to `15.5.27`; both lockfiles synchronized; production build passes locally with pnpm `10.28.0`. Vercel preview has not yet been retried or reviewed; `main` remains unchanged.
+- **Branch:** `development` (local changes not yet committed or pushed).
+- **Code baseline:** `1a7dd67` (`Added Youtube ID`); agent guidance, qualifications edits, and Next.js security update follow on `development`.
 - **Guidance entry point:** `AGENTS.md`, then `docs/agentic/INDEX.md`.
 - **Setup design:** `docs/superpowers/specs/2026-09-26-agentic-environment-design.md`.
 - **Setup plan:** `docs/superpowers/plans/2026-09-26-agentic-environment-setup.md`.
-- **Next action:** review the diff; decide whether to publish a development preview. Check the current Vercel branch settings before relying on automatic deployment.
+- **Next action:** commit and push the security update to `development`, inspect the resulting Vercel deployment and preview, then merge only after it succeeds and is reviewed.
 
 ## Decisions still open
 

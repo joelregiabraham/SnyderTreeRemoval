@@ -13,3 +13,9 @@ Record durable project decisions here with a date, decision, reason, and impact.
 - **Decision:** perform this setup on a branch named `development`; keep production on the configured production branch until changes are reviewed and the user approves release.
 - **Reason:** the user wants to protect the live website while making changes.
 - **Impact:** do not edit or merge into `main` as part of this setup; Vercel preview behavior remains conditional on project settings.
+
+## 2026-10-07 — Patch Next.js before promoting the website update
+
+- **Decision:** upgrade Next.js from `15.2.4` to `15.5.27` and synchronize `package-lock.json` and `pnpm-lock.yaml` before retrying the Vercel deployment.
+- **Reason:** the Vercel build completed but deployment was blocked because `15.2.4` is vulnerable. The owner authorized the security update; Vercel had selected pnpm `10.28.0` for builds.
+- **Impact:** do not bypass Vercel's vulnerable-version protection. Require a successful, reviewed development deployment before merging to production.

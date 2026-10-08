@@ -2,7 +2,7 @@
 
 ## Snapshot
 
-This is a static, single-page marketing site built with Next.js App Router, React, TypeScript, Tailwind CSS, and shadcn-style UI components. These notes describe source inspected at commit `1a7dd67` (`Added Youtube ID`); re-check source before relying on details after that point.
+This is a static, single-page marketing site built with Next.js App Router, React, TypeScript, Tailwind CSS, and shadcn-style UI components. The architecture was first inspected at commit `1a7dd67` (`Added Youtube ID`); dependency details below were rechecked during the 2026-10-07 security update.
 
 ## Active route and component map
 
@@ -45,8 +45,8 @@ Footer
 
 ## Build and repository observations
 
-- `package.json` declares Next.js `15.2.4`, React `19`, TypeScript, Tailwind, and scripts for `dev`, `build`, `start`, and `lint`. It has no test script.
-- Both `package-lock.json` and `pnpm-lock.yaml` exist. The supported package manager has not been confirmed; do not regenerate or remove a lockfile without approval.
+- `package.json` declares Next.js `15.5.27`, React `19`, TypeScript, Tailwind, and scripts for `dev`, `build`, `start`, and `lint`. It has no test script. Next.js was upgraded from vulnerable `15.2.4` after Vercel blocked the deployment; both lockfiles were synchronized.
+- Both `package-lock.json` and `pnpm-lock.yaml` exist. The supported package manager has not been formally selected. Vercel detected `pnpm-lock.yaml` and used pnpm `10.28.0` for the 2026-10-07 deployment.
 - `next.config.mjs` sets `eslint.ignoreDuringBuilds` and `typescript.ignoreBuildErrors` to `true`. A successful Next build therefore does not establish that those checks passed.
 - No test files or GitHub workflow files were found in the inspected repository listing. No automated CI behavior should be assumed from the repository alone.
 - The root layout imports `app/globals.css`. `styles/globals.css` is a second, currently unreferenced global stylesheet with overlapping base styles.
